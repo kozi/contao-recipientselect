@@ -20,8 +20,10 @@ class RecipientManager extends \System {
         if($objForm->recipientselect == '1' && $objFormField != null) {
 
             // subject
-            $arrSubmitted['subject'] = $this->objFormField->recipient_subject;
+            $arrSubmitted['subject'] = $objFormField->recipient_subject;
 
+
+            // get email definitions
             $arrOptions = array();
             $arrTmp     = deserialize($objFormField->options);
             foreach($arrTmp as $entry) {
@@ -29,6 +31,8 @@ class RecipientManager extends \System {
                 $arrOptions[$label] = $entry['value'];
             }
 
+
+            // add emails to recipient array
             $arrRecipients = array();
             if (is_array($arrSubmitted['recipientmenu'])) {
                 foreach($arrSubmitted['recipientmenu'] as $entry) {
@@ -40,6 +44,7 @@ class RecipientManager extends \System {
                 $arrRecipients[] = $arrOptions[$key];
             }
 
+            // add default recipient
             if (count($arrRecipients)=== 0 || $objFormField->recipient_sendCopy == '1') {
                 $arrRecipients[] = $objFormField->recipient_defaultEmail;
             }
