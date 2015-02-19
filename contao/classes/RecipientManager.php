@@ -10,7 +10,7 @@
 
 class RecipientManager extends \System {
 
-    public function prepareRecipients($arrSubmitted, $arrLabels, $objForm) {
+    public function prepareRecipients(&$arrSubmitted, $arrLabels, $objForm) {
 
         $objFormField = \FormFieldModel::findOneBy(
             array('pid = ?', 'type = ?'),
