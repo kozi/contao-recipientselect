@@ -9,7 +9,10 @@
  * @package    recipientselect
  */
 class FormRecipientMenu extends \FormSelectMenu {
+    protected $strTemplate = 'form_select_recipient';
 
-
+    protected function isValidOption($varInput) {
+        return true;
+    }
 
 }
