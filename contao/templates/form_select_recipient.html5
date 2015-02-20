@@ -24,7 +24,7 @@
         <?php endif; ?>
 
         <?php if ($option['type'] == 'option'): ?>
-            <option value="<?php echo $option['label']; ?>"<?php echo $option['selected']; ?>><?php echo $option['label']; ?></option>
+            <option value="<?php echo ($option['value'] == '') ? '' : $option['label']; ?>"<?php echo $option['selected']; ?>><?php echo $option['label']; ?></option>
         <?php endif; ?>
 
         <?php if ($option['type'] == 'group_end'): ?>
