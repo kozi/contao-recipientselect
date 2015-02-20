@@ -18,10 +18,9 @@ $GLOBALS['TL_LANG']['FFL']['recipientmenu'] = array('Empfänger Menü', 'Empfän
 $GLOBALS['TL_LANG']['tl_form_field']['recipient_legend']                = 'Empfänger Menü';
 
 $GLOBALS['TL_LANG']['tl_form_field']['recipient_defaultEmail']          = array('Standard-Empfänger', 'Wenn kein Empfänger gewählt wurde wird das Formular an diese Adresse gesendet.');
-$GLOBALS['TL_LANG']['tl_form_field']['recipient_sendCopy']              = array('Kopie an Standard-Empfänger senden', 'Soll eine Kopie an den Standard-Empfänger geschickt werden?');
+$GLOBALS['TL_LANG']['tl_form_field']['recipient_sendCopy']              = array('Kopie an Standard-Empfänger senden', 'Soll immer eine Kopie an den Standard-Empfänger geschickt werden?');
 
 $GLOBALS['TL_LANG']['tl_form_field']['recipientmenu']['options_legend'] = 'Empfängerliste';
 $GLOBALS['TL_LANG']['tl_form_field']['recipientmenu']['options']        = array('Empfängerliste', 'Emailadressen die zur Auswahl stehen sollen.');
 $GLOBALS['TL_LANG']['tl_form_field']['recipientmenu']['ow_value']       = 'Email';
-
 

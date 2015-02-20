@@ -42,9 +42,8 @@ $GLOBALS['TL_DCA']['tl_form_field']['config']['onload_callback'][] = function(Da
     if ($objFormField->type == 'recipientmenu') {
 
 
-        // Name und die Option Pflichtfeld sind nicht veränderbar
+        // Name ist nicht veränderbar
         $objFormField->name      = 'recipientmenu';
-        $objFormField->mandatory = '1';
         $objFormField->save();
 
         $GLOBALS['TL_DCA']['tl_form_field']['fields']['name']['eval']['readonly']      = true;
