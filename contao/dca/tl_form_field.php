@@ -47,7 +47,6 @@ $GLOBALS['TL_DCA']['tl_form_field']['config']['onload_callback'][] = function(Da
         $objFormField->save();
 
         $GLOBALS['TL_DCA']['tl_form_field']['fields']['name']['eval']['readonly']      = true;
-        $GLOBALS['TL_DCA']['tl_form_field']['fields']['mandatory']['eval']['disabled'] = true;
 
         $GLOBALS['TL_LANG']['tl_form_field']['options_legend'] = $GLOBALS['TL_LANG']['tl_form_field']['recipientmenu']['options_legend'];
         $GLOBALS['TL_LANG']['tl_form_field']['options']        = $GLOBALS['TL_LANG']['tl_form_field']['recipientmenu']['options'];
