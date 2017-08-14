@@ -2,11 +2,11 @@
 
 /**
  * Contao Open Source CMS
- * Copyright (C) 2005-2015 Leo Feyer
+ * Copyright (C) 2005-2017 Leo Feyer
  *
  *
  * PHP version 5
- * @copyright  Martin Kozianka 2015 <http://kozianka.de/>
+ * @copyright  Martin Kozianka 2015-2017 <http://kozianka.de/>
  * @author     Martin Kozianka <http://kozianka.de/>
  * @package    recipientselect
  * @license    LGPL 
@@ -16,9 +16,3 @@
 $GLOBALS['TL_FFL']['recipientmenu'] = 'FormRecipientMenu';
 
 $GLOBALS['TL_HOOKS']['prepareFormData'][] = array('RecipientManager', 'prepareRecipients');
-
-if (TL_MODE == 'BE') {
-    $GLOBALS['TL_MOOTOOLS'][] = '<style>.tl_optionwizard input.tl_text_2 { width:200px; }</style>';
-}
-
-

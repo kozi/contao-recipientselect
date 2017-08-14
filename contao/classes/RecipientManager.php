@@ -3,7 +3,7 @@
 /**
  * Class RecipientManager
  *
- * @copyright  Martin Kozianka 2015
+ * @copyright  Martin Kozianka 2015-2017
  * @author     Martin Kozianka <http://kozianka.de>
  * @package    recipientselect
  */

@@ -4,7 +4,7 @@
  * Class FormRecipientMenu
  *
  * Provide methods to handle recipient menus.
- * @copyright  Martin Kozianka 2015 <http://kozianka.de/>
+ * @copyright  Martin Kozianka 2015-2017 <http://kozianka.de/>
  * @author     Martin Kozianka <http://kozianka.de/>
  * @package    recipientselect
  */
