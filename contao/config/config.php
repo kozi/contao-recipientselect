@@ -17,9 +17,8 @@ $GLOBALS['TL_FFL']['recipientmenu'] = 'FormRecipientMenu';
 
 $GLOBALS['TL_HOOKS']['prepareFormData'][] = array('RecipientManager', 'prepareRecipients');
 
-
 if (TL_MODE == 'BE') {
-    $GLOBALS['TL_CSS'][] = 'system/modules/recipientselect/assets/be_style.css|screen';
+    $GLOBALS['TL_MOOTOOLS'][] = '<style>.tl_optionwizard input.tl_text_2 { width:200px; }</style>';
 }
 
 
