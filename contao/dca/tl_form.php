@@ -26,7 +26,7 @@ $GLOBALS['TL_DCA']['tl_form']['config']['onload_callback'][] = function(DataCont
 
         $GLOBALS['TL_DCA']['tl_form']['palettes']['default'] = str_replace(
             ',sendViaEmail',
-            '',
+            ',format,skipEmpty',
             $GLOBALS['TL_DCA']['tl_form']['palettes']['default']
         );
     }
