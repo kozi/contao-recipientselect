@@ -15,4 +15,5 @@
 
 $GLOBALS['TL_FFL']['recipientmenu'] = 'FormRecipientMenu';
 
-$GLOBALS['TL_HOOKS']['prepareFormData'][] = array('RecipientManager', 'prepareRecipients');
+$methodName = (version_compare(VERSION, "4", ">=")) ? 'prepareRecipients': 'prepareRecipients3';
+$GLOBALS['TL_HOOKS']['prepareFormData'][] = array('RecipientManager', $methodName);
