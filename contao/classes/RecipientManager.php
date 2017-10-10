@@ -24,7 +24,7 @@ class RecipientManager extends \System {
         if($objForm->recipientselect == '1' && $objFormField != null) {
 
             // subject
-            $arrSubmitted['subject'] = $objFormField->recipient_subject;
+            $objForm->subject = $objFormField->recipient_subject;
 
 
             // get email definitions
@@ -55,8 +55,6 @@ class RecipientManager extends \System {
 
             $objForm->recipient      = implode(',', $arrRecipients);
             $objForm->sendViaEmail   = '1';
-            $objForm->format         = 'email';
-
         }
     }
 }
