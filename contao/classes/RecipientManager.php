@@ -10,11 +10,11 @@
 
 class RecipientManager extends \System {
 
-    public function prepareRecipients3(&$arrSubmitted, $arrLabels, $objForm) {
-        $this->prepareRecipients($arrSubmitted, $arrLabels, null, $objForm);
+    public function prepareRecipients3(&$arrSubmitted, $arrLabels, &$objForm, $arrFields) {
+        $this->prepareRecipients($arrSubmitted, $arrLabels, $arrFields, $objForm);
     }
 
-    public function prepareRecipients(&$arrSubmitted, $arrLabels, $arrFields, $objForm) {
+    public function prepareRecipients(&$arrSubmitted, $arrLabels, $arrFields, &$objForm) {
 
         $objFormField = \FormFieldModel::findOneBy(
             array('pid = ?', 'type = ?'),
